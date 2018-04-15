@@ -285,9 +285,9 @@ if __name__ == '__main__':
     goal_threshold = 20
     max_iter, smooth_iter = 1000, 20
     param = Param(width, height, border_size, max_iter, goal_threshold, smooth_iter)
-    p_start = np.array([100, 100], dtype=np.int32)
+    p_start = np.array([20, 20], dtype=np.int32)
     p_goal = np.array([190, 190], dtype=np.int32)
-    obj_coord = obstacles_2(height, width)
+    obj_coord = obstacles_1(height, width)
     rob = Rob(p_start, 2)
     obst = []
     for coord in obj_coord:
